@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PictureThis.View.CameraSavePage"
+             Title="Save Your Picture"
+             BackgroundColor="{DynamicResource PageBackgroundColor}">
+    <ContentPage.Content>
+        <StackLayout>
+            <ScrollView>
+                <Grid BackgroundColor="{DynamicResource TertiaryColor}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="400"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Frame Grid.Row="0" 
+                           Grid.ColumnSpan="2"
+                           Margin="10,10,10,10"
+                           Style="{StaticResource frmStyle}">
+                        <Image x:Name="imgImage"
+                           HorizontalOptions="Fill"
+                           VerticalOptions="Fill"
+                           Aspect="AspectFit"
+                           Margin="10,10,10,10"/>
+                    </Frame>
+                    
+
+                    <Label Grid.Row="1"
+                           Grid.Column="0"
+                           x:Name="lblName"
+                           Text="Name: "
+                           FontSize="Large"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           Style="{StaticResource lblStyle}"
+                           Margin="0,0,0,0"/>
+                    
+                    <Entry Grid.Row="1"
+                           Grid.Column="1"
+                           x:Name="entName"
+                           Keyboard="Chat"
+                           Style="{StaticResource entStyle}"
+                           Margin="0,0,10,0"/>
+
+                    <Label Grid.Row="2"
+                           Grid.Column="0"
+                           x:Name="lblDate"
+                           Text="Date: "
+                           FontSize="Large"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           Style="{StaticResource lblStyle}"
+                           Margin="0,0,0,0"/>
+
+                    <DatePicker Grid.Row="2"
+                                Grid.Column="1"
+                                x:Name="datePickDate"
+                                IsEnabled="False"
+                                Style="{StaticResource dpkStyle}"
+                                Margin="0,0,10,0"/>
+
+                    <Label Grid.Row="3"
+                           Grid.Column="0"
+                           x:Name="lblTime"
+                           Text="Time: "
+                           FontSize="Large"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           Style="{StaticResource lblStyle}"
+                           Margin="0,0,0,0"/>
+
+                    <TimePicker Grid.Row="3"
+                                Grid.Column="1"
+                                x:Name="timePickTime"
+                                IsEnabled="False"
+                                Style="{StaticResource tpkStyle}"
+                                Margin="0,0,10,0"/>
+
+                    <Label Grid.Row="4"
+                           Grid.Column="0"
+                           x:Name="lblLocation"
+                           Text="GPS: "
+                           FontSize="Large"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           Style="{StaticResource lblStyle}"
+                           Margin="0,0,0,0"/>
+
+                    <Entry Grid.Row="4"
+                           Grid.Column="1"
+                           x:Name="entLocation"
+                           IsReadOnly="True"
+                           Style="{StaticResource entStyle}"
+                           Margin="0,0,10,0"/>
+
+                    <Picker Grid.Row="5"
+                            Grid.ColumnSpan="2"
+                            x:Name="spinner"
+                            Margin="10,0,10,0"
+                            Style="{StaticResource pckStyle}"
+                            Title="Select A Tag"/>
+
+                    <Grid Grid.Row="6"
+                          Grid.ColumnSpan="2"
+                          x:Name="grdButtons"
+                          Margin="10,10,10,10"
+                          BackgroundColor="{DynamicResource TertiaryColor}">
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button Grid.Column="0"
+                                x:Name="btnNewTag"
+                                Text="Create New Tag"
+                                Style="{StaticResource btnStyle}"
+                                Margin="10,10,10,10"/>
+
+                        <Button Grid.Column="1"
+                                x:Name="btnAddTag"
+                                Text="Add Tag"
+                                Style="{StaticResource btnStyle}"
+                                Margin="10,10,10,10"/>
+
+                        <Button Grid.Column="2"
+                                x:Name="btnRemoveTag"
+                                Text="Remove Tag"
+                                Style="{StaticResource btnStyle}"
+                                Margin="10,10,10,10"/>
+
+                        <Button Grid.Column="3"
+                                x:Name="btnResetTags"
+                                Text="Reset Tags"
+                                Style="{StaticResource btnStyle}"
+                                Margin="10,10,10,10"/>
+                    </Grid>
+
+                    
+                    <Label Grid.Row="7"
+                           Grid.Column="0"
+                           x:Name="lblTag"
+                           Text="Tags: "
+                           FontSize="Large"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           Style="{StaticResource lblStyle}"
+                           Margin="0,0,0,0"/>
+
+                    <Editor Grid.Row="7"
+                           Grid.Column="1"
+                           x:Name="edtTags"
+                           IsReadOnly="True"
+                           Style="{StaticResource edtStyle}"
+                           Margin="10,0,10,0"/>
+
+                    <Button Grid.Row="8"
+                            Grid.ColumnSpan="2"
+                            x:Name="SaveButton"
+                            Text="Save Photo"
+                            Style="{StaticResource btnStyle}"
+                            Margin="10,0,10,0"/>
+
+                </Grid>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

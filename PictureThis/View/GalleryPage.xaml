@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PictureThis.GalleryPage"
+             Title="Gallery Page"
+             BackgroundColor="{DynamicResource PageBackgroundColor}">
+    <ContentPage.Content>
+        <StackLayout Margin="5,5,5,5">
+            <Button
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Center"
+                    CornerRadius="5"
+                    Padding="5,0,5,0"
+                    Clicked="OnBrowseClickedTop5Rated"
+                    Text="Top 5 rated Pictures"
+                    Style="{StaticResource btnStyle}"/>
+            <Button
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Center"
+                    CornerRadius="5"
+                    Padding="5,0,5,0"
+                    Clicked="OnBrowseClickedAllPictures"
+                    Text="Go through all Pictures"
+                    Style="{StaticResource btnStyle}"/>
+            <Button
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Center"
+                    CornerRadius="5"
+                    Padding="5,0,5,0"
+                    Clicked="OnBrowseSortRating"
+                    Text="Sort by Rating higest to lowest"
+                    Style="{StaticResource btnStyle}"/>            
+            <Button
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Center"
+                    CornerRadius="5"
+                    Padding="5,0,5,0"
+                    Clicked="OnBrowseClickedSortbyDateTime"
+                    Text="Sort by Date and Time"
+                    Style="{StaticResource btnStyle}"/>
+            <Button
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Center"
+                    CornerRadius="5"
+                    Padding="5,0,5,0"
+                    Clicked="OnBrowseClickedLocation"
+                    Text="Display pictures closest to your Location"
+                    Style="{StaticResource btnStyle}"/>
+
+            <Button
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Center"
+                    CornerRadius="5"
+                    Padding="5,0,5,0"
+                    Clicked="OnBrowseSortByTags"
+                    Text="Choose a Tag"
+                    Style="{StaticResource btnStyle}"/>
+            <Button
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Center"
+                    CornerRadius="5"
+                    Padding="5,0,5,0"
+                    Text="Map View"
+                    Style="{StaticResource btnStyle}"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
