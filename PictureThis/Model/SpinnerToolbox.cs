@@ -1,4 +1,5 @@
-﻿using System;
+﻿//This page was primarily developed by Alex C.
+using System;
 using System.Collections.Generic;
 using System.Text;
 using Xamarin.Forms;

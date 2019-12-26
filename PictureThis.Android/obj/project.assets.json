@@ -2281,24 +2281,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\rstev\\.nuget\\packages\\": {},
+    "C:\\Users\\xwina\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\CSCI-191T-Mobile-Dev-Project\\PictureThis\\PictureThis.Android\\PictureThis.Android.csproj",
+      "projectUniqueName": "C:\\Users\\xwina\\Documents\\PictureThis\\PictureThis\\PictureThis.Android\\PictureThis.Android.csproj",
       "projectName": "PictureThis.Android",
-      "projectPath": "D:\\GitHub\\CSCI-191T-Mobile-Dev-Project\\PictureThis\\PictureThis.Android\\PictureThis.Android.csproj",
-      "packagesPath": "C:\\Users\\rstev\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHub\\CSCI-191T-Mobile-Dev-Project\\PictureThis\\PictureThis.Android\\obj\\",
+      "projectPath": "C:\\Users\\xwina\\Documents\\PictureThis\\PictureThis\\PictureThis.Android\\PictureThis.Android.csproj",
+      "packagesPath": "C:\\Users\\xwina\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\xwina\\Documents\\PictureThis\\PictureThis\\PictureThis.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\rstev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\xwina\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -2312,8 +2312,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "D:\\GitHub\\CSCI-191T-Mobile-Dev-Project\\PictureThis\\PictureThis\\PictureThis.csproj": {
-              "projectPath": "D:\\GitHub\\CSCI-191T-Mobile-Dev-Project\\PictureThis\\PictureThis\\PictureThis.csproj"
+            "C:\\Users\\xwina\\Documents\\PictureThis\\PictureThis\\PictureThis\\PictureThis.csproj": {
+              "projectPath": "C:\\Users\\xwina\\Documents\\PictureThis\\PictureThis\\PictureThis\\PictureThis.csproj"
             }
           }
         }

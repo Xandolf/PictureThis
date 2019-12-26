@@ -1,4 +1,5 @@
-﻿using PictureThis.View;
+﻿//This page was primarily developed by Steven R
+using PictureThis.View;
 using System;
 using System.Collections.Generic;
 

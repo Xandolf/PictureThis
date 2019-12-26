@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿//This page was primarily developed by Xander W.
+using Newtonsoft.Json;
 using PictureThis.Model;
 using System;
 using System.Collections.Generic;
